@@ -1,0 +1,9 @@
+./pages/_app.js:1:1
+Module not found: Can't resolve '@/styles/globals.css'
+> 1 | import "../styles/globals.css"
+    | ^
+  2 |
+  3 | export default function App({ Component, pageProps }) {
+  4 |   return <Component {...pageProps} />
+
+https://nextjs.org/docs/messages/module-not-found
