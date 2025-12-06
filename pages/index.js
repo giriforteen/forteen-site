@@ -6,11 +6,30 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>Forteen - Master Workplace Communication Through Microlearning</title>
-        <meta name="description" content="60-second sprints that build real workplace skills for early-career professionals." />
+        <title>Forteen Studios - UNFORGETTABLE Pilot Live | Master Workplace Communication</title>
+        <meta name="description" content="NEW: UNFORGETTABLE executive presence training is live! Interactive VIP scenarios in 7 minutes. Plus 60-second sprints for workplace communication skills." />
       </Head>
 
       <div className="home-container">
+        {/* Studios Announcement Banner */}
+        <section className="studios-announcement-banner">
+          <div className="announcement-content">
+            <span className="announcement-badge">✨ NEW FROM FORTEEN STUDIOS</span>
+            <h2 className="announcement-title">UNFORGETTABLE is Live</h2>
+            <p className="announcement-text">
+              Executive presence training reimagined. Interactive scenarios with VIPs. 7 minutes to transform how you show up.
+            </p>
+            <a 
+              href="https://giriforteen.github.io/unforgettable-forteen/" 
+              className="btn btn-studios-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Try The Pilot Free →
+            </a>
+          </div>
+        </section>
+
         {/* Hero Section */}
         <section className="hero">
           <div className="hero-content">
@@ -30,6 +49,122 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Forteen Studios Showcase */}
+        <section className="studios-showcase">
+          <div className="studios-container">
+            <div className="studios-header">
+              <span className="studios-eyebrow">INTRODUCING</span>
+              <h2 className="studios-brand">FORTEEN STUDIOS</h2>
+              <p className="studios-tagline">Where Professionals Become Unforgettable</p>
+            </div>
+
+            <div className="studios-hero-grid">
+              <div className="studios-content">
+                <div className="series-badge">Forteen Original Series</div>
+                <h3 className="series-title">UNFORGETTABLE</h3>
+                <p className="series-subtitle">Executive Presence Training Reimagined</p>
+                
+                <div className="pilot-info">
+                  <div className="pilot-badge">
+                    <span className="pilot-icon">▶</span>
+                    Pilot Available Now
+                  </div>
+                  <p className="pilot-description">
+                    You're backstage with Deepika Padukone. She says "These events are exhausting." 
+                    What would you say? Test your executive presence in 4 real VIP scenarios.
+                  </p>
+                </div>
+
+                <div className="studios-features">
+                  <div className="feature-item">
+                    <span className="feature-icon">✨</span>
+                    <span>Interactive Scenarios</span>
+                  </div>
+                  <div className="feature-item">
+                    <span className="feature-icon">🌍</span>
+                    <span>Global + Indian Blend</span>
+                  </div>
+                  <div className="feature-item">
+                    <span className="feature-icon">⚡</span>
+                    <span>7-Minute Experience</span>
+                  </div>
+                </div>
+
+                <div className="studios-cta-group">
+                  <a 
+                    href="https://giriforteen.github.io/unforgettable-forteen/" 
+                    className="btn btn-studios-large"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Try The Spotlight Test Free
+                  </a>
+                  
+                  <div className="waitlist-form">
+                    <p className="waitlist-label">Want Season 1? (Jan 2025)</p>
+                    <div className="waitlist-input-group">
+                      <input 
+                        type="email" 
+                        placeholder="Your email" 
+                        className="waitlist-email-input"
+                        id="studios-waitlist-email"
+                      />
+                      <button 
+                        className="btn btn-waitlist"
+                        onClick={() => {
+                          const email = document.getElementById('studios-waitlist-email').value;
+                          if (email && email.includes('@')) {
+                            window.location.href = `mailto:girish@forteen.in?subject=UNFORGETTABLE Season 1 Waitlist&body=Please add ${email} to the Season 1 waitlist.`;
+                          } else {
+                            alert('Please enter a valid email');
+                          }
+                        }}
+                      >
+                        Notify Me
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="studios-visual">
+                <div className="poster-frame">
+                  <div className="poster-gradient"></div>
+                  <div className="poster-content">
+                    <div className="poster-text-top">
+                      <div className="poster-eyebrow">FORTEEN STUDIOS PRESENTS</div>
+                      <div className="poster-title">UNFORGETTABLE</div>
+                    </div>
+                    <div className="poster-text-bottom">
+                      <div className="poster-launch">Season 1 • January 2025</div>
+                      <div className="poster-tagline">6 Episodes • Interactive • Certificates</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="studios-stats">
+              <div className="stat-item">
+                <div className="stat-number">85%</div>
+                <div className="stat-label">Completion Rate</div>
+              </div>
+              <div className="stat-item">
+                <div className="stat-number">7 min</div>
+                <div className="stat-label">Pilot Length</div>
+              </div>
+              <div className="stat-item">
+                <div className="stat-number">4</div>
+                <div className="stat-label">VIP Scenarios</div>
+              </div>
+              <div className="stat-item">
+                <div className="stat-number">Jan 2025</div>
+                <div className="stat-label">Season 1 Launch</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Featured Products */}
         <section className="products-section">
           <h2>Start Your First Sprint</h2>
@@ -45,7 +180,7 @@ export default function Home() {
                 Practice real workplace scenarios. Get instant feedback. Build the skill that powers every professional relationship.
               </p>
               <a href="https://giriforteen.github.io/listen-sprint" className="btn btn-outline" target="_blank" rel="noopener noreferrer">
-                Launch Listen Sprint &rarr;
+                Launch Listen Sprint →
               </a>
             </div>
 
@@ -65,7 +200,7 @@ export default function Home() {
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                Take the Test &rarr;
+                Take the Test →
               </a>
             </div>
 
@@ -73,19 +208,14 @@ export default function Home() {
             <div className="product-card">
               <div className="product-header">
                 <h3>Voice Sprint</h3>
-                <span className="status-badge available">Available Now</span>
+                <span className="status-badge coming">In Development</span>
               </div>
               <p className="product-tagline">Learn to speak up in 60 seconds</p>
               <p className="product-description">
                 Find your voice in meetings. Contribute with confidence. Turn ideas into impact in any conversation.
               </p>
-              <a 
-                href="https://giriforteen.github.io/voice-sprint-mvp/" 
-                className="btn btn-outline" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                Launch Voice Sprint &rarr;
+              <a href="mailto:girish@forteen.in?subject=Voice Sprint Waitlist" className="btn btn-outline">
+                Join Waitlist →
               </a>
             </div>
           </div>
@@ -96,17 +226,17 @@ export default function Home() {
           <h2>How Forteen Sprints Work</h2>
           <div className="features-grid">
             <div className="feature-card">
-              <div className="feature-icon">&#9889;</div>
+              <div className="feature-icon">⚡</div>
               <h3>Quick</h3>
               <p>60 seconds to 5 minutes. Practice fits into your actual workday, not around it.</p>
             </div>
             <div className="feature-card">
-              <div className="feature-icon">&#127918;</div>
+              <div className="feature-icon">🎮</div>
               <h3>Gamified</h3>
               <p>Badges, streaks, and levels keep you motivated. Progress you can see and share.</p>
             </div>
             <div className="feature-card">
-              <div className="feature-icon">&#128188;</div>
+              <div className="feature-icon">💼</div>
               <h3>Workplace-Ready</h3>
               <p>Real scenarios from IT, fintech, and tech. Skills you'll use the same day.</p>
             </div>
@@ -230,16 +360,16 @@ export default function Home() {
         {/* Corporate Services (De-emphasized) */}
         <section className="corporate-section">
           <div className="corporate-content">
-            <h2>Team Solutions &amp; Corporate Programs</h2>
+            <h2>Team Solutions & Corporate Programs</h2>
             <p>
               Beyond our sprint products, we work with organizations to build communication capability 
               at scale. Custom programs for IT sales teams, professional development, and leadership acceleration.
             </p>
             <div className="corporate-services">
-              <div className="service-icon">&#127919;</div>
-              <div className="service-icon">&#128172;</div>
-              <div className="service-icon">&#128640;</div>
-              <div className="service-icon">&#128101;</div>
+              <div className="service-icon">🎯</div>
+              <div className="service-icon">💬</div>
+              <div className="service-icon">🚀</div>
+              <div className="service-icon">💥</div>
             </div>
             <Link href="/services" className="btn btn-secondary">
               Learn About Team Solutions
