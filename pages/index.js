@@ -101,7 +101,7 @@ export default function Home() {
                   </a>
                   
                   <div className="waitlist-form">
-                    <p className="waitlist-label">Want Season 1? (Jan 2025)</p>
+                    <p className="waitlist-label">Want Season 1? (Jan 2026)</p>
                     <div className="waitlist-input-group">
                       <input 
                         type="email" 
@@ -136,7 +136,7 @@ export default function Home() {
                       <div className="poster-title">UNFORGETTABLE</div>
                     </div>
                     <div className="poster-text-bottom">
-                      <div className="poster-launch">Season 1 • January 2025</div>
+                      <div className="poster-launch">Season 1 • January 2026</div>
                       <div className="poster-tagline">6 Episodes • Interactive • Certificates</div>
                     </div>
                   </div>
@@ -158,7 +158,7 @@ export default function Home() {
                 <div className="stat-label">VIP Scenarios</div>
               </div>
               <div className="stat-item">
-                <div className="stat-number">Jan 2025</div>
+                <div className="stat-number">Jan 2026</div>
                 <div className="stat-label">Season 1 Launch</div>
               </div>
             </div>
