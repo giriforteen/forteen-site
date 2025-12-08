@@ -46,3 +46,4 @@ The Contact page loads the EmailJS CDN and sends the form via `window.emailjs.se
 - Colors: Orange `#F28B30`, Navy `#1E293B`; gradients extended for web.
 - Update footer links and social profiles as needed.
 - Replace OG/Twitter images with your brand visuals when ready.
+ 
