@@ -6,166 +6,60 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>Forteen Studios - UNFORGETTABLE Pilot Live | Master Workplace Communication</title>
-        <meta name="description" content="NEW: UNFORGETTABLE executive presence training is live! Interactive VIP scenarios in 7 minutes. Plus 60-second sprints for workplace communication skills." />
+        <title>Forteen Studios - UNFORGETTABLE Episode 1 Now Streaming</title>
+        <meta name="description" content="UNFORGETTABLE Episode 1 now streaming. Executive presence training reimagined. Plus 60-second sprints for workplace communication." />
       </Head>
 
-      <div className="home-container">
-        {/* Studios Announcement Banner */}
-        <section className="studios-announcement-banner">
-          <div className="announcement-content">
-            <span className="announcement-badge">✨ NEW FROM FORTEEN STUDIOS</span>
-            <h2 className="announcement-title">UNFORGETTABLE is Live</h2>
-            <p className="announcement-text">
-              Executive presence training reimagined. Interactive scenarios with VIPs. 7 minutes to transform how you show up.
-            </p>
-            <a 
-              href="https://giriforteen.github.io/unforgettable-forteen/" 
-              className="btn btn-studios-primary"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Try The Pilot Free →
-            </a>
-          </div>
-        </section>
-
-        {/* Hero Section */}
-        <section className="hero">
-          <div className="hero-content">
-            <h1>Master workplace communication. One sprint at a time.</h1>
-            <p className="hero-subtitle">
-              60-second sprints that build real workplace skills for early-career professionals. 
-              Built for IT professionals, fintech analysts, tech teams, and emerging leaders.
-            </p>
-            <div className="hero-cta">
-              <a href="https://giriforteen.github.io/listen-sprint" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                Try Listen Sprint Free
+            <div className="home-container">
+        {/* NEW Combined UNFORGETTABLE Hero - Replaces announcement banner + old hero */}
+        <section className="unforgettable-hero">
+          <div className="unforgettable-hero-container">
+            
+            {/* Left Side - Content */}
+            <div className="unforgettable-content">
+              <div className="studios-badge">FORTEEN STUDIOS PRESENTS</div>
+              <h1 className="unforgettable-title">UNFORGETTABLE</h1>
+              <h2 className="episode-title">Episode 1: The Seven-Second Rule</h2>
+              <p className="unforgettable-description">
+                Executive presence training reimagined. Interactive scenarios with VIPs. 
+                7 minutes to transform how you show up.
+              </p>
+              <a 
+                href="https://giriforteen.github.io/unforgettable-forteen/" 
+                className="btn btn-stream"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                ▶ Stream Now
               </a>
-              <Link href="/programs" className="btn btn-secondary">
-                Explore All Products
-              </Link>
             </div>
+            
+            {/* Right Side - Poster */}
+            <div className="unforgettable-poster">
+              <div className="poster-gradient">
+                <div className="poster-content">
+                  <div className="poster-eyebrow">FORTEEN STUDIOS PRESENTS</div>
+                  <div className="poster-title">UNFORGETTABLE</div>
+                  <div className="poster-tagline">Where Professionals Become Unforgettable</div>
+                </div>
+              </div>
+            </div>
+            
           </div>
         </section>
 
-        {/* Forteen Studios Showcase */}
-        <section className="studios-showcase">
-          <div className="studios-container">
-            <div className="studios-header">
-              <span className="studios-eyebrow">INTRODUCING</span>
-              <h2 className="studios-brand">FORTEEN STUDIOS</h2>
-              <p className="studios-tagline">Where Professionals Become Unforgettable</p>
-            </div>
-
-            <div className="studios-hero-grid">
-              <div className="studios-content">
-                <div className="series-badge">Forteen Original Series</div>
-                <h3 className="series-title">UNFORGETTABLE</h3>
-                <p className="series-subtitle">Executive Presence Training Reimagined</p>
-                
-                <div className="pilot-info">
-                  <div className="pilot-badge">
-                    <span className="pilot-icon">▶</span>
-                    Pilot Available Now
-                  </div>
-                  <p className="pilot-description">
-                    You're backstage with Deepika Padukone. She says "These events are exhausting." 
-                    What would you say? Test your executive presence in 4 real VIP scenarios.
-                  </p>
-                </div>
-
-                <div className="studios-features">
-                  <div className="feature-item">
-                    <span className="feature-icon">✨</span>
-                    <span>Interactive Scenarios</span>
-                  </div>
-                  <div className="feature-item">
-                    <span className="feature-icon">🌍</span>
-                    <span>Global + Indian Blend</span>
-                  </div>
-                  <div className="feature-item">
-                    <span className="feature-icon">⚡</span>
-                    <span>7-Minute Experience</span>
-                  </div>
-                </div>
-
-                <div className="studios-cta-group">
-                  <a 
-                    href="https://giriforteen.github.io/unforgettable-forteen/" 
-                    className="btn btn-studios-large"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Try The Spotlight Test Free
-                  </a>
-                  
-                  <div className="waitlist-form">
-                    <p className="waitlist-label">Want Season 1? (Jan 2026)</p>
-                    <div className="waitlist-input-group">
-                      <input 
-                        type="email" 
-                        placeholder="Your email" 
-                        className="waitlist-email-input"
-                        id="studios-waitlist-email"
-                      />
-                      <button 
-                        className="btn btn-waitlist"
-                        onClick={() => {
-                          const email = document.getElementById('studios-waitlist-email').value;
-                          if (email && email.includes('@')) {
-                            window.location.href = `mailto:girish@forteen.in?subject=UNFORGETTABLE Season 1 Waitlist&body=Please add ${email} to the Season 1 waitlist.`;
-                          } else {
-                            alert('Please enter a valid email');
-                          }
-                        }}
-                      >
-                        Notify Me
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="studios-visual">
-                <div className="poster-frame">
-                  <div className="poster-gradient"></div>
-                  <div className="poster-content">
-                    <div className="poster-text-top">
-                      <div className="poster-eyebrow">FORTEEN STUDIOS PRESENTS</div>
-                      <div className="poster-title">UNFORGETTABLE</div>
-                    </div>
-                    <div className="poster-text-bottom">
-                      <div className="poster-launch">Season 1 • January 2026</div>
-                      <div className="poster-tagline">6 Episodes • Interactive • Certificates</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="studios-stats">
-              <div className="stat-item">
-                <div className="stat-number">85%</div>
-                <div className="stat-label">Completion Rate</div>
-              </div>
-              <div className="stat-item">
-                <div className="stat-number">7 min</div>
-                <div className="stat-label">Pilot Length</div>
-              </div>
-              <div className="stat-item">
-                <div className="stat-number">4</div>
-                <div className="stat-label">VIP Scenarios</div>
-              </div>
-              <div className="stat-item">
-                <div className="stat-number">Jan 2026</div>
-                <div className="stat-label">Season 1 Launch</div>
-              </div>
-            </div>
+        {/* Sprints Introduction */}
+        <section className="sprints-intro">
+          <div className="container">
+            <h2>Or master skills in 60 seconds</h2>
+            <p className="sprints-intro-text">
+              Quick, focused practice sessions for workplace communication. 
+              Build confidence one sprint at a time.
+            </p>
           </div>
         </section>
 
-        {/* Featured Products */}
+        {/* Featured Products */
         <section className="products-section">
           <h2>Start Your First Sprint</h2>
           <div className="products-grid">
@@ -180,7 +74,7 @@ export default function Home() {
                 Practice real workplace scenarios. Get instant feedback. Build the skill that powers every professional relationship.
               </p>
               <a href="https://giriforteen.github.io/listen-sprint" className="btn btn-outline" target="_blank" rel="noopener noreferrer">
-                Launch Listen Sprint →
+                Launch Listen Sprint â†’
               </a>
             </div>
 
@@ -200,7 +94,7 @@ export default function Home() {
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                Take the Test →
+                Take the Test â†’
               </a>
             </div>
 
@@ -215,7 +109,7 @@ export default function Home() {
                 Find your voice in meetings. Contribute with confidence. Turn ideas into impact in any conversation.
               </p>
               <a href="mailto:girish@forteen.in?subject=Voice Sprint Waitlist" className="btn btn-outline">
-                Join Waitlist →
+                Join Waitlist â†’
               </a>
             </div>
           </div>
@@ -236,7 +130,7 @@ export default function Home() {
               <p>Badges, streaks, and levels keep you motivated. Progress you can see and share.</p>
             </div>
             <div className="feature-card">
-              <div className="feature-icon">💼</div>
+              <div className="feature-icon">ðŸ’¼</div>
               <h3>Workplace-Ready</h3>
               <p>Real scenarios from IT, fintech, and tech. Skills you'll use the same day.</p>
             </div>
@@ -318,7 +212,7 @@ export default function Home() {
             <div className="founder-text">
               <h2>Built by Someone Who's Been There</h2>
               <p className="founder-intro">
-                Hi, I'm Girish. I've spent 35+ years in marketing and sales—writing speeches for IBM CEOs, 
+                Hi, I'm Girish. I've spent 35+ years in marketing and salesâ€”writing speeches for IBM CEOs, 
                 developing marketing strategy for Apple Computer, and leading marketing communications for IBM India.
               </p>
               <p>
@@ -366,10 +260,10 @@ export default function Home() {
               at scale. Custom programs for IT sales teams, professional development, and leadership acceleration.
             </p>
             <div className="corporate-services">
-              <div className="service-icon">🎯</div>
-              <div className="service-icon">💬</div>
-              <div className="service-icon">🚀</div>
-              <div className="service-icon">💥</div>
+              <div className="service-icon">ðŸŽ¯</div>
+              <div className="service-icon">ðŸ’¬</div>
+              <div className="service-icon">ðŸš€</div>
+              <div className="service-icon">ðŸ‘¥</div>
             </div>
             <Link href="/services" className="btn btn-secondary">
               Learn About Team Solutions

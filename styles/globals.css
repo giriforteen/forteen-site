@@ -1053,500 +1053,224 @@ footer ul li {
   }
 }
 
-/* ===================================
-   FORTEEN STUDIOS STYLES
-   =================================== */
-
-/* Studios Color Variables */
-:root {
-  --studios-navy: #0B1A28;
-  --studios-burgundy: #6B0F1A;
-  --studios-purple: #8B2C92;
-  --studios-teal: #1A8B9E;
-  --studios-gold: #d4af37;
-  --studios-coral: #FF6B6B;
-}
-
-/* Studios Announcement Banner */
-.studios-announcement-banner {
-  background: linear-gradient(135deg, var(--studios-burgundy) 0%, var(--studios-purple) 50%, var(--studios-teal) 100%);
-  padding: 20px;
-  text-align: center;
-  color: white;
-  position: relative;
-  overflow: hidden;
-}
-
-.studios-announcement-banner::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: 
-    radial-gradient(circle at 20% 50%, rgba(255, 107, 107, 0.2) 0%, transparent 50%),
-    radial-gradient(circle at 80% 50%, rgba(26, 139, 158, 0.2) 0%, transparent 50%);
-  animation: bannerGlow 4s ease-in-out infinite;
-}
-
-@keyframes bannerGlow {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.6; }
-}
-
-.announcement-content {
-  position: relative;
-  z-index: 2;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.announcement-badge {
-  display: inline-block;
-  font-size: 0.75rem;
-  font-weight: 800;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--studios-gold);
-  margin-bottom: 8px;
-}
-
-.announcement-title {
-  font-size: 2rem;
-  font-weight: 900;
-  margin-bottom: 8px;
-  letter-spacing: -0.5px;
-}
-
-.announcement-text {
-  font-size: 1rem;
-  margin-bottom: 15px;
-  opacity: 0.95;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.btn-studios-primary {
-  background: white;
-  color: var(--studios-burgundy);
-  padding: 12px 32px;
-  border-radius: 30px;
-  font-weight: 700;
-  font-size: 0.95rem;
-  transition: all 0.3s ease;
-  display: inline-block;
-  border: none;
-}
-
-.btn-studios-primary:hover {
-  background: var(--studios-gold);
-  color: white;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
-}
-
-/* Studios Showcase Section */
-.studios-showcase {
-  padding: 80px 20px;
-  background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
-  position: relative;
-}
-
-.studios-container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.studios-header {
-  text-align: center;
-  margin-bottom: 60px;
-}
-
-.studios-eyebrow {
-  font-size: 0.85rem;
-  font-weight: 800;
-  letter-spacing: 3px;
-  color: var(--studios-coral);
-  text-transform: uppercase;
-  margin-bottom: 15px;
-  display: block;
-}
-
-.studios-brand {
-  font-family: 'Playfair Display', serif;
-  font-size: 3.5rem;
-  font-weight: 900;
-  color: var(--studios-navy);
-  margin-bottom: 10px;
-  letter-spacing: -1px;
-}
-
-.studios-tagline {
-  font-size: 1.25rem;
-  color: #666;
-  font-style: italic;
-  font-weight: 300;
-}
-
-/* Studios Hero Grid */
-.studios-hero-grid {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 60px;
+/* UNFORGETTABLE Split-Screen Hero */
+.unforgettable-hero {
+  background: linear-gradient(135deg, #0a0a0f 0%, #1a1520 100%);
+  min-height: 600px;
+  display: flex;
   align-items: center;
-  margin-bottom: 60px;
+  padding: 80px 20px;
 }
 
-.studios-content {
-  padding-right: 20px;
+.unforgettable-hero-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  width: 100%;
 }
 
-.series-badge {
-  display: inline-block;
-  padding: 6px 18px;
-  background: linear-gradient(135deg, var(--studios-coral) 0%, #FF8E53 100%);
-  border-radius: 20px;
-  font-size: 0.75rem;
-  font-weight: 800;
-  letter-spacing: 1.5px;
+/* Left Side - Content */
+.unforgettable-content {
+  padding-right: 40px;
+}
+
+.studios-badge {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: white;
+  color: #d4af37;
   margin-bottom: 20px;
 }
 
-.series-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 3.5rem;
+.unforgettable-title {
+  font-size: 4.5rem;
   font-weight: 900;
-  color: var(--studios-navy);
+  font-family: 'Playfair Display', Georgia, serif;
+  color: #f4e4ba;
   margin-bottom: 15px;
-  letter-spacing: -2px;
-  line-height: 1;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
 }
 
-.series-subtitle {
+.episode-title {
   font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--studios-teal);
-  margin-bottom: 30px;
+  font-weight: 400;
+  font-style: italic;
+  color: #f4e4ba;
+  opacity: 0.8;
+  margin-bottom: 25px;
 }
 
-.pilot-info {
-  margin-bottom: 30px;
-}
-
-.pilot-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 10px 24px;
-  background: rgba(26, 223, 184, 0.1);
-  border: 2px solid var(--studios-teal);
-  border-radius: 30px;
-  font-size: 0.9rem;
-  font-weight: 700;
-  color: var(--studios-teal);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 15px;
-}
-
-.pilot-icon {
-  font-size: 0.8rem;
-}
-
-.pilot-description {
-  color: #555;
+.unforgettable-description {
+  font-size: 1.15rem;
   line-height: 1.7;
-  font-size: 1.05rem;
-}
-
-.studios-features {
-  display: flex;
-  gap: 25px;
+  color: #fefefe;
+  opacity: 0.9;
   margin-bottom: 35px;
-  flex-wrap: wrap;
+  max-width: 500px;
 }
 
-.studios-features .feature-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: #444;
-}
-
-.studios-features .feature-icon {
-  font-size: 1.3rem;
-}
-
-/* Studios CTA Group */
-.studios-cta-group {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-}
-
-.btn-studios-large {
-  background: linear-gradient(135deg, var(--studios-burgundy) 0%, var(--studios-purple) 100%);
+.btn-stream {
+  background: linear-gradient(135deg, #a8194d 0%, #6b3fa0 50%, #1e7c9e 100%);
   color: white;
-  padding: 18px 40px;
-  border-radius: 40px;
-  font-weight: 700;
+  padding: 16px 40px;
+  border-radius: 8px;
   font-size: 1.1rem;
-  transition: all 0.3s ease;
-  display: inline-block;
-  text-align: center;
-  border: none;
-  box-shadow: 0 4px 15px rgba(107, 15, 26, 0.3);
-}
-
-.btn-studios-large:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(107, 15, 26, 0.4);
-}
-
-/* Waitlist Form */
-.waitlist-form {
-  background: #f8f9fa;
-  padding: 20px;
-  border-radius: 12px;
-  border: 2px solid #e9ecef;
-}
-
-.waitlist-label {
-  font-size: 0.9rem;
   font-weight: 600;
-  color: #666;
-  margin-bottom: 10px;
-}
-
-.waitlist-input-group {
-  display: flex;
-  gap: 10px;
-}
-
-.waitlist-email-input {
-  flex: 1;
-  padding: 12px 18px;
-  border: 2px solid #ddd;
-  border-radius: 25px;
-  font-size: 0.95rem;
-  outline: none;
-  transition: border-color 0.3s ease;
-}
-
-.waitlist-email-input:focus {
-  border-color: var(--studios-teal);
-}
-
-.btn-waitlist {
-  background: var(--studios-teal);
-  color: white;
-  padding: 12px 28px;
-  border-radius: 25px;
-  font-weight: 700;
-  font-size: 0.95rem;
-  border: none;
-  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
   transition: all 0.3s ease;
-  white-space: nowrap;
+  box-shadow: 0 4px 20px rgba(168, 25, 77, 0.4);
+  border: none;
 }
 
-.btn-waitlist:hover {
-  background: #15707d;
-  transform: translateY(-2px);
+.btn-stream:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(168, 25, 77, 0.6);
 }
 
-/* Studios Visual / Poster Frame */
-.studios-visual {
+/* Right Side - Poster */
+.unforgettable-poster {
   position: relative;
-}
-
-.poster-frame {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 4/5;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+  height: 500px;
 }
 
 .poster-gradient {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, var(--studios-burgundy) 0%, #B91646 25%, #2D1B3D 50%, #0A4D5C 75%, var(--studios-teal) 100%);
+  background: linear-gradient(135deg, #a8194d 0%, #6b3fa0 50%, #1e7c9e 100%);
+  border-radius: 16px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 40px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
 }
 
 .poster-gradient::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: 
-    radial-gradient(circle at 20% 30%, rgba(255, 107, 107, 0.3) 0%, transparent 50%),
-    radial-gradient(circle at 80% 70%, rgba(26, 139, 158, 0.3) 0%, transparent 50%);
-  animation: posterGlow 8s ease-in-out infinite;
-}
-
-@keyframes posterGlow {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.7; }
+  background: radial-gradient(circle at top right, rgba(255,255,255,0.1) 0%, transparent 50%);
+  pointer-events: none;
 }
 
 .poster-content {
-  position: relative;
-  z-index: 2;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 40px 30px;
-  color: white;
   text-align: center;
-}
-
-.poster-text-top {
-  margin-top: 20px;
+  position: relative;
+  z-index: 1;
 }
 
 .poster-eyebrow {
-  font-size: 0.7rem;
-  font-weight: 800;
-  letter-spacing: 3px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .poster-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 900;
-  letter-spacing: -2px;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-}
-
-.poster-text-bottom {
+  font-family: 'Playfair Display', Georgia, serif;
+  color: white;
   margin-bottom: 20px;
-}
-
-.poster-launch {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 10px;
+  line-height: 1.1;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .poster-tagline {
-  font-size: 0.95rem;
-  opacity: 0.9;
-  letter-spacing: 0.5px;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.5;
 }
 
-/* Studios Stats */
-.studios-stats {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-  padding: 40px;
-  background: linear-gradient(135deg, rgba(107, 15, 26, 0.05) 0%, rgba(26, 139, 158, 0.05) 100%);
-  border-radius: 20px;
-  margin-top: 40px;
-}
-
-.stat-item {
-  text-align: center;
-  padding: 20px;
-}
-
-.stat-number {
-  font-size: 2.5rem;
-  font-weight: 900;
-  color: var(--studios-burgundy);
-  margin-bottom: 8px;
-  letter-spacing: -1px;
-}
-
-.stat-label {
-  font-size: 0.9rem;
-  color: #666;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-/* Responsive - Studios */
-@media (max-width: 968px) {
-  .studios-hero-grid {
+/* Responsive */
+@media (max-width: 1024px) {
+  .unforgettable-hero-container {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 50px;
   }
   
-  .studios-content {
+  .unforgettable-content {
     padding-right: 0;
+    text-align: center;
   }
   
-  .studios-brand {
+  .unforgettable-title {
+    font-size: 3.5rem;
+  }
+  
+  .unforgettable-description {
+    max-width: 100%;
+  }
+  
+  .unforgettable-poster {
+    height: 400px;
+  }
+  
+  .poster-title {
     font-size: 2.5rem;
-  }
-  
-  .series-title {
-    font-size: 2.5rem;
-  }
-  
-  .poster-frame {
-    max-width: 400px;
-    margin: 0 auto;
-  }
-  
-  .studios-stats {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 30px 20px;
   }
 }
 
 @media (max-width: 768px) {
-  .announcement-title {
-    font-size: 1.5rem;
+  .unforgettable-hero {
+    padding: 60px 20px;
+    min-height: auto;
   }
   
-  .announcement-text {
-    font-size: 0.9rem;
+  .unforgettable-title {
+    font-size: 2.5rem;
   }
   
-  .studios-brand {
-    font-size: 2rem;
-  }
-  
-  .series-title {
-    font-size: 2rem;
-  }
-  
-  .series-subtitle {
+  .episode-title {
     font-size: 1.2rem;
   }
   
-  .waitlist-input-group {
-    flex-direction: column;
+  .unforgettable-description {
+    font-size: 1rem;
   }
   
-  .btn-waitlist {
-    width: 100%;
+  .unforgettable-poster {
+    height: 350px;
   }
   
   .poster-title {
     font-size: 2rem;
   }
   
-  .poster-launch {
-    font-size: 1.2rem;
+  .btn-stream {
+    width: 100%;
+    text-align: center;
   }
-  
-  .studios-stats {
-    grid-template-columns: 1fr;
-  }
-  
-  .stat-number {
-    font-size: 2rem;
-  }
+}
+
+
+/* Sprints Introduction Section */
+.sprints-intro {
+  padding: 60px 20px;
+  background: white;
+  text-align: center;
+}
+
+.sprints-intro h2 {
+  font-size: 2rem;
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+}
+
+.sprints-intro-text {
+  font-size: 1.15rem;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
 }
