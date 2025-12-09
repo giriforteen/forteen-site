@@ -10,8 +10,8 @@ export default function Home() {
         <meta name="description" content="UNFORGETTABLE Episode 1 now streaming. Executive presence training reimagined. Plus 60-second sprints for workplace communication." />
       </Head>
 
-            <div className="home-container">
-        {/* NEW Combined UNFORGETTABLE Hero - Replaces announcement banner + old hero */}
+      <div className="home-container">
+        {/* NEW Combined UNFORGETTABLE Hero */}
         <section className="unforgettable-hero">
           <div className="unforgettable-hero-container">
             
@@ -59,7 +59,9 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Featured Products */
+
+
+        {/* Featured Products */}
         <section className="products-section">
           <h2>Start Your First Sprint</h2>
           <div className="products-grid">
