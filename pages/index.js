@@ -214,7 +214,7 @@ export default function Home() {
             <div className="founder-text">
               <h2>Built by Someone Who's Been There</h2>
               <p className="founder-intro">
-                Hi, I'm Girish. I've spent 35+ years in marketing and salesâ€”writing speeches for IBM CEOs, 
+                Hi, I'm Girish. I've spent 35+ years in marketing and sales—writing speeches for IBM CEOs, 
                 developing marketing strategy for Apple Computer, and leading marketing communications for IBM India.
               </p>
               <p>
