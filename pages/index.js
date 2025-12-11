@@ -262,10 +262,10 @@ export default function Home() {
               at scale. Custom programs for IT sales teams, professional development, and leadership acceleration.
             </p>
             <div className="corporate-services">
-              <div className="service-icon">ðŸŽ¯</div>
+              <div className="service-icon">🎯</div>
               <div className="service-icon">💬</div>
-              <div className="service-icon">ðŸš€</div>
-              <div className="service-icon">ðŸ‘¥</div>
+              <div className="service-icon">🚀</div>
+              <div className="service-icon">💥</div>
             </div>
             <Link href="/services" className="btn btn-secondary">
               Learn About Team Solutions
