@@ -59,7 +59,7 @@ export default function Contact() {
               <h3>Social</h3>
               <p>
                 <a href="https://www.linkedin.com/company/forteen-consulting" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                {' Â· '}
+                {' · '}
                 <a href="https://www.instagram.com/forteen.consulting" target="_blank" rel="noopener noreferrer">Instagram</a>
               </p>
             </div>

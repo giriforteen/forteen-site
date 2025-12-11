@@ -59,11 +59,11 @@ export default function Layout({ title, description, children }){
             </div>
             <div>
               <div className="badge">NAVIGATION</div>
-              <p><Link href="/">Home</Link> Â· <Link href="/about">About</Link> Â· <Link href="/services">Services</Link> Â· <Link href="/programs">Programs</Link> Â· <Link href="/contact">Contact</Link></p>
+              <p><Link href="/">Home</Link> · <Link href="/about">About</Link> · <Link href="/services">Services</Link> · <Link href="/programs">Programs</Link> · <Link href="/contact">Contact</Link></p>
             </div>
             <div>
               <div className="badge">SOCIAL</div>
-              <p><a href="https://www.linkedin.com" target="_blank">LinkedIn</a> Â· <a href="https://instagram.com/forteen.consulting" target="_blank">Instagram</a></p>
+              <p><a href="https://www.linkedin.com" target="_blank">LinkedIn</a> · <a href="https://instagram.com/forteen.consulting" target="_blank">Instagram</a></p>
             </div>
           </div>
           <div className="footer-meta">Â© {new Date().getFullYear()} Forteen Consulting Pvt. Ltd.</div>

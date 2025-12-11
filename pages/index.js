@@ -132,7 +132,7 @@ export default function Home() {
               <p>Badges, streaks, and levels keep you motivated. Progress you can see and share.</p>
             </div>
             <div className="feature-card">
-              <div className="feature-icon">ðŸ’¼</div>
+              <div className="feature-icon">💼</div>
               <h3>Workplace-Ready</h3>
               <p>Real scenarios from IT, fintech, and tech. Skills you'll use the same day.</p>
             </div>
@@ -263,7 +263,7 @@ export default function Home() {
             </p>
             <div className="corporate-services">
               <div className="service-icon">ðŸŽ¯</div>
-              <div className="service-icon">ðŸ’¬</div>
+              <div className="service-icon">💬</div>
               <div className="service-icon">ðŸš€</div>
               <div className="service-icon">ðŸ‘¥</div>
             </div>
