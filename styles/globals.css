@@ -606,7 +606,7 @@ nav a.active {
 }
 
 .service-features-list li:before {
-  content: "âœ“";
+  content: "✓";
   position: absolute;
   left: 0;
   color: var(--primary-color);
@@ -767,7 +767,7 @@ nav a.active {
 }
 
 .program-list li:before {
-  content: "âœ“";
+  content: "✓";
   position: absolute;
   left: 0;
   color: var(--primary-color);
