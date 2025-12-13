@@ -6,60 +6,74 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>Forteen Studios - UNFORGETTABLE Episode 2 Now Streaming</title>
-        <meta name="description" content="UNFORGETTABLE Episode 2 now streaming. Master first impressions and body language through interactive scenarios. Plus 60-second sprints for workplace communication." />
+        <title>Forteen - Master Workplace Communication Through Microlearning</title>
+        <meta name="description" content="60-second sprints that build real workplace skills for early-career professionals." />
       </Head>
 
       <div className="home-container">
-        {/* NEW Combined UNFORGETTABLE Hero */}
-        <section className="unforgettable-hero">
-          <div className="unforgettable-hero-container">
-            
-            {/* Left Side - Content */}
-            <div className="unforgettable-content">
-              <div className="studios-badge">FORTEEN STUDIOS PRESENTS</div>
-              <h1 className="unforgettable-title">UNFORGETTABLE</h1>
-              <h2 className="episode-title">Episode 2: Before You Speak</h2>
-              <p className="unforgettable-description">
-                Master first impressions and body language. 20 interactive questions across 5 real-world scenarios. 
-                10 minutes to transform your presence.
-              </p>
-              <a 
-                href="https://giriforteen.github.io/unforgettable-forteen/unforgettable_episode2_before_you_speak.html" 
-                className="btn btn-stream"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                ▶ Stream Now
+        {/* Hero Section */}
+        <section className="hero">
+          <div className="hero-content">
+            <h1>Master workplace communication. One sprint at a time.</h1>
+            <p className="hero-subtitle">
+              60-second sprints that build real workplace skills for early-career professionals. 
+              Built for IT professionals, fintech analysts, tech teams, and emerging leaders.
+            </p>
+            <div className="hero-cta">
+              <a href="https://giriforteen.github.io/listen-sprint" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                Try Listen Sprint Free
               </a>
+              <Link href="/programs" className="btn btn-secondary">
+                Explore All Products
+              </Link>
             </div>
+          </div>
+        </section>
+
+        {/* Forteen Studios - Split Panel Showcase */}
+        <section className="studios-showcase">
+          <div className="studios-split">
             
-            {/* Right Side - Poster */}
-            <div className="unforgettable-poster">
-              <div className="poster-gradient">
-                <div className="poster-content">
-                  <div className="poster-eyebrow">FORTEEN STUDIOS PRESENTS</div>
-                  <div className="poster-title">UNFORGETTABLE</div>
-                  <div className="poster-tagline">Where Professionals Become Unforgettable</div>
-                </div>
+            {/* Left Panel - UNFORGETTABLE */}
+            <div className="studio-panel panel-unforgettable">
+              <div className="panel-content">
+                <div className="panel-header">FORTEEN STUDIOS PRESENTS</div>
+                <h2 className="panel-title">UNFORGETTABLE</h2>
+                <p className="panel-subtitle">Episode 2: Before You Speak</p>
+                <p className="panel-description">
+                  Master first impressions and body language. 20 interactive questions across 
+                  5 real-world scenarios. 10 minutes to transform your presence.
+                </p>
+                <a href="https://giriforteen.github.io/unforgettable-forteen/" 
+                   className="panel-cta"
+                   target="_blank" 
+                   rel="noopener noreferrer">
+                  <span className="cta-icon">▶</span> Stream Now
+                </a>
               </div>
             </div>
-            
+
+            {/* Right Panel - MIND LABS */}
+            <div className="studio-panel panel-mindlabs">
+              <div className="panel-content">
+                <div className="panel-header">FORTEEN STUDIOS PRESENTS</div>
+                <h2 className="panel-title">MIND LABS</h2>
+                <p className="panel-subtitle">Understanding the patterns beneath behavior</p>
+                <p className="panel-tagline">"The current was always there. You just learned to call it home."</p>
+                <div className="episode-box">
+                  <div className="episode-label">EPISODE 1</div>
+                  <div className="episode-title">The Slot Machine Heart</div>
+                  <div className="episode-tagline">Why unpredictability feels like love</div>
+                </div>
+                <a href="mailto:girish@forteen.in?subject=Mind Labs Waitlist" 
+                   className="panel-cta">
+                  Join Waitlist →
+                </a>
+              </div>
+            </div>
+
           </div>
         </section>
-
-        {/* Sprints Introduction */}
-        <section className="sprints-intro">
-          <div className="container">
-            <h2>Or master skills in 60 seconds</h2>
-            <p className="sprints-intro-text">
-              Quick, focused practice sessions for workplace communication. 
-              Build confidence one sprint at a time.
-            </p>
-          </div>
-        </section>
-
-
 
         {/* Featured Products */}
         <section className="products-section">
@@ -265,7 +279,7 @@ export default function Home() {
               <div className="service-icon">🎯</div>
               <div className="service-icon">💬</div>
               <div className="service-icon">🚀</div>
-              <div className="service-icon">💥</div>
+              <div className="service-icon">👥</div>
             </div>
             <Link href="/services" className="btn btn-secondary">
               Learn About Team Solutions
