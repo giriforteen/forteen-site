@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>Forteen Studios - UNFORGETTABLE Episode 1 Now Streaming</title>
-        <meta name="description" content="UNFORGETTABLE Episode 1 now streaming. Executive presence training reimagined. Plus 60-second sprints for workplace communication." />
+        <title>Forteen Studios - UNFORGETTABLE Episode 2 Now Streaming</title>
+        <meta name="description" content="UNFORGETTABLE Episode 2 now streaming. Master first impressions and body language through interactive scenarios. Plus 60-second sprints for workplace communication." />
       </Head>
 
       <div className="home-container">
@@ -19,13 +19,13 @@ export default function Home() {
             <div className="unforgettable-content">
               <div className="studios-badge">FORTEEN STUDIOS PRESENTS</div>
               <h1 className="unforgettable-title">UNFORGETTABLE</h1>
-              <h2 className="episode-title">Episode 1: The Seven-Second Rule</h2>
+              <h2 className="episode-title">Episode 2: Before You Speak</h2>
               <p className="unforgettable-description">
-                Executive presence training reimagined. Interactive scenarios with VIPs. 
-                7 minutes to transform how you show up.
+                Master first impressions and body language. 20 interactive questions across 5 real-world scenarios. 
+                10 minutes to transform your presence.
               </p>
               <a 
-                href="https://giriforteen.github.io/unforgettable-forteen/" 
+                href="https://giriforteen.github.io/unforgettable-forteen/unforgettable_episode2_before_you_speak.html" 
                 className="btn btn-stream"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -76,7 +76,7 @@ export default function Home() {
                 Practice real workplace scenarios. Get instant feedback. Build the skill that powers every professional relationship.
               </p>
               <a href="https://giriforteen.github.io/listen-sprint" className="btn btn-outline" target="_blank" rel="noopener noreferrer">
-                Launch Listen Sprint â†’
+                Launch Listen Sprint →
               </a>
             </div>
 
@@ -96,7 +96,7 @@ export default function Home() {
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                Take the Test â†’
+                Take the Test →
               </a>
             </div>
 
@@ -111,7 +111,7 @@ export default function Home() {
                 Find your voice in meetings. Contribute with confidence. Turn ideas into impact in any conversation.
               </p>
               <a href="mailto:girish@forteen.in?subject=Voice Sprint Waitlist" className="btn btn-outline">
-                Join Waitlist â†’
+                Join Waitlist →
               </a>
             </div>
           </div>
