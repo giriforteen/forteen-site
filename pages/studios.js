@@ -81,7 +81,7 @@ export default function Studios() {
             {/* Coming Soon */}
             <div className="episode-card coming-soon">
               <div className="episode-number">EPISODES 3-6</div>
-              <h3>Season 1 Coming January 2025</h3>
+              <h3>Releasing Shortly</h3>
               <p className="episode-type">Executive Essentials</p>
               <ul className="episode-list">
                 <li>Command Without Speaking (Body Language)</li>
