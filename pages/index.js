@@ -18,12 +18,12 @@ export default function Home() {
               Welcome to your complete toolkit for mastering modern communication—professional and personal, safe and effective.
             </p>
             <div className="product-grid">
-              <a href="https://studios.forteen.in/unforgettable_episode2_before_you_speak.html" target="_blank" rel="noopener noreferrer" className="product-item">
+              <a href="/studios" className="product-item">
                 <div className="icon">🎬</div>
                 <div className="name">Forteen Studios</div>
                 <div className="desc">Interactive executive presence training</div>
               </a>
-              <a href="https://mindlabs.forteen.in/episodes/episode-1-full.html" target="_blank" rel="noopener noreferrer" className="product-item">
+              <a href="/mindlabs" className="product-item">
                 <div className="icon">🧠</div>
                 <div className="name">Mind Labs</div>
                 <div className="desc">Behavioral psychology insights</div>

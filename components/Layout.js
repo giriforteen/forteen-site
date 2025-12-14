@@ -36,12 +36,12 @@ export default function Layout({ title, description, children }){
           <nav className="desktop-nav">
             <ul>
               <li>
-                <a href="https://studios.forteen.in/unforgettable_episode2_before_you_speak.html" target="_blank" rel="noopener noreferrer">
+                <a href="/studios">
                   Studios
                 </a>
               </li>
               <li>
-                <a href="https://mindlabs.forteen.in/episodes/episode-1-full.html" target="_blank" rel="noopener noreferrer">
+                <a href="/mindlabs">
                   Mind Labs
                 </a>
               </li>
@@ -125,10 +125,10 @@ export default function Layout({ title, description, children }){
         {/* Mobile Navigation */}
         <div className={`mobile-nav ${mobileMenuOpen ? 'open' : ''}`}>
           <div className="mobile-nav-section">
-            <a href="https://studios.forteen.in/unforgettable_episode2_before_you_speak.html" target="_blank" rel="noopener noreferrer" className="mobile-nav-item">
+            <a href="/studios" className="mobile-nav-item">
               <span className="mobile-icon">🎬</span> Studios
             </a>
-            <a href="https://mindlabs.forteen.in/episodes/episode-1-full.html" target="_blank" rel="noopener noreferrer" className="mobile-nav-item">
+            <a href="/mindlabs" className="mobile-nav-item">
               <span className="mobile-icon">🧠</span> Mind Labs
             </a>
           </div>
