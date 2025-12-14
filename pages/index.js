@@ -18,7 +18,7 @@ export default function Home() {
               Welcome to your complete toolkit for mastering modern communication—professional and personal, safe and effective.
             </p>
             <div className="product-grid">
-              <a href="https://giriforteen.github.io/unforgettable-forteen/" target="_blank" rel="noopener noreferrer" className="product-item">
+              <a href="https://giriforteen.github.io/unforgettable-forteen/unforgettable_episode2_before_you_speak.html" target="_blank" rel="noopener noreferrer" className="product-item">
                 <div className="icon">🎬</div>
                 <div className="name">Forteen Studios</div>
                 <div className="desc">Interactive executive presence training</div>
@@ -56,7 +56,7 @@ export default function Home() {
               <p className="panel-description">
                 20 interactive questions across 5 real-world scenarios. 10 minutes to transform your presence.
               </p>
-              <a href="https://giriforteen.github.io/unforgettable-forteen/" target="_blank" rel="noopener noreferrer" className="panel-cta">
+              <a href="https://giriforteen.github.io/unforgettable-forteen/unforgettable_episode2_before_you_speak.html" target="_blank" rel="noopener noreferrer" className="panel-cta">
                 ▶ Stream Now
               </a>
             </div>
