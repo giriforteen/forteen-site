@@ -41,7 +41,7 @@ export default function Layout({ title, description, children }){
                 </a>
               </li>
               <li>
-                <a href="https://mindlabs.forteen.in" target="_blank" rel="noopener noreferrer">
+                <a href="https://mindlabs.forteen.in/episodes/episode-1-full.html" target="_blank" rel="noopener noreferrer">
                   Mind Labs
                 </a>
               </li>
@@ -128,7 +128,7 @@ export default function Layout({ title, description, children }){
             <a href="https://giriforteen.github.io/unforgettable-forteen/unforgettable_episode2_before_you_speak.html" target="_blank" rel="noopener noreferrer" className="mobile-nav-item">
               <span className="mobile-icon">🎬</span> Studios
             </a>
-            <a href="https://mindlabs.forteen.in" target="_blank" rel="noopener noreferrer" className="mobile-nav-item">
+            <a href="https://mindlabs.forteen.in/episodes/episode-1-full.html" target="_blank" rel="noopener noreferrer" className="mobile-nav-item">
               <span className="mobile-icon">🧠</span> Mind Labs
             </a>
           </div>

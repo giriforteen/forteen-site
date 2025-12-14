@@ -23,7 +23,7 @@ export default function Home() {
                 <div className="name">Forteen Studios</div>
                 <div className="desc">Interactive executive presence training</div>
               </a>
-              <a href="https://mindlabs.forteen.in" target="_blank" rel="noopener noreferrer" className="product-item">
+              <a href="https://mindlabs.forteen.in/episodes/episode-1-full.html" target="_blank" rel="noopener noreferrer" className="product-item">
                 <div className="icon">🧠</div>
                 <div className="name">Mind Labs</div>
                 <div className="desc">Behavioral psychology insights</div>
@@ -70,7 +70,7 @@ export default function Home() {
               <blockquote className="panel-quote">
                 The current was always there. You just learned to call it home.
               </blockquote>
-              <a href="https://mindlabs.forteen.in" target="_blank" rel="noopener noreferrer" className="panel-cta">
+              <a href="https://mindlabs.forteen.in/episodes/episode-1-full.html" target="_blank" rel="noopener noreferrer" className="panel-cta">
                 Start Episode 1 →
               </a>
             </div>
