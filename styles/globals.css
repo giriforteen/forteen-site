@@ -152,179 +152,6 @@ nav a.active {
   width: 100%;
 }
 
-/* Forteen Studios Split Panel Showcase */
-.studios-showcase {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-.studios-split {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  min-height: 700px;
-}
-
-.studio-panel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 80px 60px;
-  position: relative;
-  overflow: hidden;
-}
-
-/* UNFORGETTABLE Panel - Dark with Gold */
-.panel-unforgettable {
-  background: #0a0a0a;
-  color: #FAF9F6;
-}
-
-/* MIND LABS Panel - Gradient */
-.panel-mindlabs {
-  background: linear-gradient(135deg, #E43140 0%, #8B2C92 50%, #1A8B9E 100%);
-  color: white;
-}
-
-.panel-content {
-  max-width: 600px;
-  position: relative;
-  z-index: 10;
-}
-
-.panel-header {
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 3px;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  opacity: 0.8;
-}
-
-.panel-unforgettable .panel-header {
-  color: #d4af37;
-}
-
-.panel-mindlabs .panel-header {
-  color: rgba(255,255,255,0.9);
-}
-
-.panel-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 64px;
-  font-weight: 900;
-  line-height: 1;
-  margin-bottom: 20px;
-  letter-spacing: 2px;
-}
-
-.panel-unforgettable .panel-title {
-  color: #d4af37;
-  text-shadow: 0 2px 20px rgba(212,175,55,0.3);
-}
-
-.panel-mindlabs .panel-title {
-  color: white;
-  text-shadow: 0 2px 20px rgba(0,0,0,0.2);
-}
-
-.panel-subtitle {
-  font-size: 22px;
-  font-style: italic;
-  margin-bottom: 25px;
-  opacity: 0.95;
-  line-height: 1.4;
-}
-
-.panel-description {
-  font-size: 17px;
-  line-height: 1.7;
-  margin-bottom: 35px;
-  opacity: 0.9;
-}
-
-.panel-tagline {
-  font-size: 20px;
-  font-style: italic;
-  margin-bottom: 30px;
-  opacity: 0.95;
-  line-height: 1.5;
-}
-
-/* Episode Preview Box for Mind Labs */
-.episode-box {
-  background: rgba(255,255,255,0.15);
-  backdrop-filter: blur(10px);
-  border: 2px solid rgba(255,255,255,0.25);
-  border-radius: 16px;
-  padding: 28px 32px;
-  margin-bottom: 35px;
-}
-
-.episode-label {
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  opacity: 0.85;
-  margin-bottom: 12px;
-}
-
-.episode-title {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 10px;
-  line-height: 1.2;
-}
-
-.episode-tagline {
-  font-size: 17px;
-  font-style: italic;
-  opacity: 0.9;
-}
-
-.panel-cta {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  font-size: 17px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  padding: 16px 40px;
-  border-radius: 50px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  box-shadow: 0 6px 25px rgba(0,0,0,0.2);
-}
-
-.panel-unforgettable .panel-cta {
-  background: linear-gradient(135deg, #E43140 0%, #8B2C92 50%, #1A8B9E 100%);
-  color: white;
-}
-
-.panel-unforgettable .panel-cta:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 35px rgba(228,49,64,0.4);
-}
-
-.panel-mindlabs .panel-cta {
-  background: rgba(255,255,255,0.95);
-  color: #E43140;
-}
-
-.panel-mindlabs .panel-cta:hover {
-  background: white;
-  transform: translateY(-3px);
-  box-shadow: 0 10px 35px rgba(255,255,255,0.3);
-}
-
-.cta-icon {
-  font-size: 14px;
-}
-
-/* Add Playfair Display Font */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap');
-
 /* Hero Section */
 .hero {
   background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
@@ -362,6 +189,41 @@ nav a.active {
   gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+/* ===================================
+   MIND LABS CTA SECTION
+   =================================== */
+
+.mindlabs-cta-section {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #1e3a5f 0%, #2d4a6f 100%);
+  text-align: center;
+}
+
+.mindlabs-cta-card {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.mindlabs-cta-card h2 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 15px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.mindlabs-subtitle {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 30px;
+  line-height: 1.6;
 }
 
 /* Products Section */
@@ -779,7 +641,7 @@ nav a.active {
 }
 
 .service-features-list li:before {
-  content: "âœ“";
+  content: "✓";
   position: absolute;
   left: 0;
   color: var(--primary-color);
@@ -940,7 +802,7 @@ nav a.active {
 }
 
 .program-list li:before {
-  content: "âœ“";
+  content: "✓";
   position: absolute;
   left: 0;
   color: var(--primary-color);
@@ -1027,7 +889,7 @@ nav a.active {
 
 .contact-info-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmin(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
   max-width: 900px;
   margin: 0 auto;
@@ -1171,49 +1033,17 @@ footer ul li {
   .hero-cta .btn {
     width: 100%;
   }
-
-  /* Studios Split Panel Mobile */
-  .studios-split {
-    grid-template-columns: 1fr;
+  
+  .mindlabs-cta-card h2 {
+    font-size: 1.5rem;
   }
-
-  .studio-panel {
-    min-height: 600px;
-    padding: 60px 30px;
+  
+  .mindlabs-subtitle {
+    font-size: 1rem;
   }
-
-  .panel-title {
-    font-size: 42px;
-  }
-
-  .panel-subtitle {
-    font-size: 18px;
-  }
-
-  .panel-description {
-    font-size: 16px;
-  }
-
-  .panel-tagline {
-    font-size: 18px;
-  }
-
-  .episode-box {
-    padding: 24px;
-  }
-
-  .episode-title {
-    font-size: 22px;
-  }
-
-  .episode-tagline {
-    font-size: 15px;
-  }
-
-  .panel-cta {
-    width: 100%;
-    justify-content: center;
-    padding: 14px 30px;
+  
+  .mindlabs-cta-card {
+    padding: 30px 20px;
   }
   
   .products-grid,

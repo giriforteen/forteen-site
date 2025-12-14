@@ -30,48 +30,23 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Forteen Studios - Split Panel Showcase */}
-        <section className="studios-showcase">
-          <div className="studios-split">
-            
-            {/* Left Panel - UNFORGETTABLE */}
-            <div className="studio-panel panel-unforgettable">
-              <div className="panel-content">
-                <div className="panel-header">FORTEEN STUDIOS PRESENTS</div>
-                <h2 className="panel-title">UNFORGETTABLE</h2>
-                <p className="panel-subtitle">Episode 2: Before You Speak</p>
-                <p className="panel-description">
-                  Master first impressions and body language. 20 interactive questions across 
-                  5 real-world scenarios. 10 minutes to transform your presence.
-                </p>
-                <a href="https://giriforteen.github.io/unforgettable-forteen/" 
-                   className="panel-cta"
-                   target="_blank" 
-                   rel="noopener noreferrer">
-                  <span className="cta-icon">▶</span> Stream Now
-                </a>
-              </div>
+        {/* Mind Labs CTA Section - NEW */}
+        <section className="mindlabs-cta-section">
+          <div className="container">
+            <div className="mindlabs-cta-card">
+              <h2>Ready to understand the patterns beneath behavior?</h2>
+              <p className="mindlabs-subtitle">
+                Explore the psychology of everyday decisions in our new series
+              </p>
+              <a 
+                href="https://mindlabs.forteen.in/episodes/episode-1-full.html" 
+                className="btn btn-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Start Episode 1 →
+              </a>
             </div>
-
-            {/* Right Panel - MIND LABS */}
-            <div className="studio-panel panel-mindlabs">
-              <div className="panel-content">
-                <div className="panel-header">FORTEEN STUDIOS PRESENTS</div>
-                <h2 className="panel-title">MIND LABS</h2>
-                <p className="panel-subtitle">Understanding the patterns beneath behavior</p>
-                <p className="panel-tagline">"The current was always there. You just learned to call it home."</p>
-                <div className="episode-box">
-                  <div className="episode-label">EPISODE 1</div>
-                  <div className="episode-title">The Slot Machine Heart</div>
-                  <div className="episode-tagline">Why unpredictability feels like love</div>
-                </div>
-                <a href="mailto:girish@forteen.in?subject=Mind Labs Waitlist" 
-                   className="panel-cta">
-                  Join Waitlist →
-                </a>
-              </div>
-            </div>
-
           </div>
         </section>
 
