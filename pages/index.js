@@ -33,7 +33,7 @@ export default function Home() {
                 <div className="name">Listen Sprint</div>
                 <div className="desc">Active listening mastery</div>
               </a>
-              <a href="mailto:girish@forteen.in?subject=Voice Sprint Waitlist" className="product-item">
+              <a href="https://giriforteen.github.io/voice-sprint-mvp/" target="_blank" rel="noopener noreferrer" className="product-item">
                 <div className="icon">🎤</div>
                 <div className="name">Voice Sprint</div>
                 <div className="desc">Speak up with confidence</div>
