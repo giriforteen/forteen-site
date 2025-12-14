@@ -61,7 +61,7 @@ export default function Layout({ title, description, children }){
                       <div className="dropdown-item-desc">Active listening mastery</div>
                     </div>
                   </a>
-                  <a href="mailto:girish@forteen.in?subject=Voice Sprint Waitlist" className="dropdown-item">
+                  <a href="https://giriforteen.github.io/voice-sprint-mvp/" target="_blank" rel="noopener noreferrer" className="dropdown-item">
                     <span className="dropdown-icon">🎤</span>
                     <div>
                       <div className="dropdown-item-title">Voice Sprint</div>
@@ -138,7 +138,7 @@ export default function Layout({ title, description, children }){
             <a href="https://giriforteen.github.io/listen-sprint" target="_blank" rel="noopener noreferrer" className="mobile-nav-item indent">
               <span className="mobile-icon">👂</span> Listen Sprint
             </a>
-            <a href="mailto:girish@forteen.in?subject=Voice Sprint Waitlist" className="mobile-nav-item indent">
+            <a href="https://giriforteen.github.io/voice-sprint-mvp/" target="_blank" rel="noopener noreferrer" className="mobile-nav-item indent">
               <span className="mobile-icon">🎤</span> Voice Sprint
             </a>
             <a href="https://giriforteen.github.io/presence-sprint-teasers/" target="_blank" rel="noopener noreferrer" className="mobile-nav-item indent">
