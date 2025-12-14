@@ -47,76 +47,31 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Hero Section */}
-        <section className="hero">
-          <div className="hero-content">
-            <h1>Master workplace communication. One sprint at a time.</h1>
-            <p className="hero-subtitle">
-              60-second sprints that build real workplace skills for early-career professionals. 
-              Built for IT professionals, fintech analysts, tech teams, and emerging leaders.
-            </p>
-            <div className="hero-cta">
-              <a href="https://giriforteen.github.io/listen-sprint" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                Try Listen Sprint Free
+        {/* Dual Hero - Studios + Mind Labs Split Screen */}
+        <section className="dual-hero">
+          <div className="dual-hero-panel studios-panel">
+            <div className="dual-hero-content">
+              <div className="panel-eyebrow">EPISODE 2: BEFORE YOU SPEAK</div>
+              <h2 className="panel-title">Master first impressions and body language</h2>
+              <p className="panel-description">
+                20 interactive questions across 5 real-world scenarios. 10 minutes to transform your presence.
+              </p>
+              <a href="https://giriforteen.github.io/unforgettable-forteen/" target="_blank" rel="noopener noreferrer" className="panel-cta">
+                ▶ Stream Now
               </a>
-              <Link href="/programs" className="btn btn-secondary">
-                Explore All Products
-              </Link>
             </div>
           </div>
-        </section>
-
-        {/* Featured Products */}
-        <section className="products-section">
-          <h2>Start Your First Sprint</h2>
-          <div className="products-grid">
-            {/* Listen Sprint */}
-            <div className="product-card">
-              <div className="product-header">
-                <h3>Listen Sprint</h3>
-                <span className="status-badge available">Available Now</span>
-              </div>
-              <p className="product-tagline">Master active listening in 60 seconds</p>
-              <p className="product-description">
-                Practice real workplace scenarios. Get instant feedback. Build the skill that powers every professional relationship.
-              </p>
-              <a href="https://giriforteen.github.io/listen-sprint" className="btn btn-outline" target="_blank" rel="noopener noreferrer">
-                Launch Listen Sprint â†’
-              </a>
-            </div>
-
-            {/* Presence Sprint */}
-            <div className="product-card">
-              <div className="product-header">
-                <h3>Presence Sprint</h3>
-                <span className="status-badge beta">Beta Available</span>
-              </div>
-              <p className="product-tagline">Build executive presence in 60 seconds</p>
-              <p className="product-description">
-                Learn to command attention in meetings, presentations, and high-stakes conversations with confidence.
-              </p>
-              <a 
-                href="https://giriforteen.github.io/presence-sprint-teasers/" 
-                className="btn btn-outline" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                Take the Test â†’
-              </a>
-            </div>
-
-            {/* Voice Sprint */}
-            <div className="product-card">
-              <div className="product-header">
-                <h3>Voice Sprint</h3>
-                <span className="status-badge coming">In Development</span>
-              </div>
-              <p className="product-tagline">Learn to speak up in 60 seconds</p>
-              <p className="product-description">
-                Find your voice in meetings. Contribute with confidence. Turn ideas into impact in any conversation.
-              </p>
-              <a href="mailto:girish@forteen.in?subject=Voice Sprint Waitlist" className="btn btn-outline">
-                Join Waitlist â†’
+          
+          <div className="dual-hero-panel mindlabs-panel">
+            <div className="dual-hero-content">
+              <div className="panel-eyebrow">EPISODE 1</div>
+              <h2 className="panel-title">The Slot Machine Heart</h2>
+              <p className="panel-subtitle">Why unpredictability feels like love</p>
+              <blockquote className="panel-quote">
+                The current was always there. You just learned to call it home.
+              </blockquote>
+              <a href="https://mindlabs.forteen.in" target="_blank" rel="noopener noreferrer" className="panel-cta">
+                Start Episode 1 →
               </a>
             </div>
           </div>
@@ -127,17 +82,17 @@ export default function Home() {
           <h2>How Forteen Sprints Work</h2>
           <div className="features-grid">
             <div className="feature-card">
-              <div className="feature-icon">âš¡</div>
+              <div className="feature-icon">⚡</div>
               <h3>Quick</h3>
               <p>60 seconds to 5 minutes. Practice fits into your actual workday, not around it.</p>
             </div>
             <div className="feature-card">
-              <div className="feature-icon">ðŸŽ®</div>
+              <div className="feature-icon">🎮</div>
               <h3>Gamified</h3>
               <p>Badges, streaks, and levels keep you motivated. Progress you can see and share.</p>
             </div>
             <div className="feature-card">
-              <div className="feature-icon">ðŸ’¼</div>
+              <div className="feature-icon">💼</div>
               <h3>Workplace-Ready</h3>
               <p>Real scenarios from IT, fintech, and tech. Skills you'll use the same day.</p>
             </div>
@@ -219,7 +174,7 @@ export default function Home() {
             <div className="founder-text">
               <h2>Built by Someone Who's Been There</h2>
               <p className="founder-intro">
-                Hi, I'm Girish. I've spent 35+ years in marketing and salesâ€”writing speeches for IBM CEOs, 
+                Hi, I'm Girish. I've spent 35+ years in marketing and sales—writing speeches for IBM CEOs, 
                 developing marketing strategy for Apple Computer, and leading marketing communications for IBM India.
               </p>
               <p>
@@ -267,10 +222,10 @@ export default function Home() {
               at scale. Custom programs for IT sales teams, professional development, and leadership acceleration.
             </p>
             <div className="corporate-services">
-              <div className="service-icon">ðŸŽ¯</div>
-              <div className="service-icon">ðŸ’¬</div>
-              <div className="service-icon">ðŸš€</div>
-              <div className="service-icon">ðŸ‘¥</div>
+              <div className="service-icon">🎯</div>
+              <div className="service-icon">💬</div>
+              <div className="service-icon">🚀</div>
+              <div className="service-icon">👥</div>
             </div>
             <Link href="/services" className="btn btn-secondary">
               Learn About Team Solutions

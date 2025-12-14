@@ -464,6 +464,133 @@ header img {
   color: white;
 }
 
+/* Dual Hero - Studios + Mind Labs Split Screen */
+.dual-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 600px;
+}
+
+.dual-hero-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Studios Panel (Left - Dark) */
+.studios-panel {
+  background: linear-gradient(135deg, #1a2332 0%, #2d3e50 100%);
+  color: white;
+}
+
+/* Mind Labs Panel (Right - Purple/Pink Gradient) */
+.mindlabs-panel {
+  background: linear-gradient(135deg, #c2185b 0%, #7b1fa2 50%, #1976d2 100%);
+  color: white;
+}
+
+.dual-hero-content {
+  max-width: 500px;
+  text-align: left;
+}
+
+.panel-eyebrow {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.panel-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.panel-subtitle {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 25px;
+  opacity: 0.95;
+}
+
+.panel-description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.panel-quote {
+  background: rgba(255, 255, 255, 0.15);
+  border-left: 4px solid rgba(255, 255, 255, 0.5);
+  padding: 20px 25px;
+  margin: 25px 0;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  font-style: italic;
+  border-radius: 8px;
+}
+
+.panel-cta {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  color: white;
+  padding: 14px 32px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.panel-cta:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Dual Hero */
+@media (max-width: 968px) {
+  .dual-hero {
+    grid-template-columns: 1fr;
+  }
+  
+  .dual-hero-panel {
+    min-height: 500px;
+    padding: 50px 30px;
+  }
+  
+  .panel-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .dual-hero-panel {
+    min-height: 450px;
+    padding: 40px 25px;
+  }
+  
+  .panel-title {
+    font-size: 1.75rem;
+  }
+  
+  .panel-description,
+  .panel-quote {
+    font-size: 1rem;
+  }
+}
+
 /* Hero Section */
 .hero {
   background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
