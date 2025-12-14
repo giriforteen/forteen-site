@@ -6,49 +6,62 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>Forteen Studios - Where Professionals Become Unforgettable</title>
-        <meta name="description" content="Interactive learning experiences in executive presence and behavioral psychology." />
+        <title>Forteen - Master Workplace Communication Through Microlearning</title>
+        <meta name="description" content="60-second sprints that build real workplace skills for early-career professionals." />
       </Head>
 
       <div className="home-container">
-        {/* Two-Panel Hero Section */}
-        <section className="two-panel-hero">
-          {/* Left Panel - UNFORGETTABLE Episode 2 */}
-          <div className="panel-left">
-            <div className="panel-content">
-              <p className="episode-label">Episode 2: Before You Speak</p>
-              <h1 className="panel-title">Master first impressions and body language</h1>
-              <p className="panel-description">
-                20 interactive questions across 5 real-world scenarios. 10 minutes to transform your presence.
-              </p>
-              <a 
-                href="https://giriforteen.github.io/unforgettable-forteen/" 
-                className="btn btn-gradient"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                ▶ Stream Now
+        {/* Mission Strip with Product Grid */}
+        <section className="mission-strip">
+          <div className="container">
+            <p className="mission-heading">
+              Welcome to your complete toolkit for mastering modern communication—professional and personal, safe and effective.
+            </p>
+            <div className="product-grid">
+              <a href="https://giriforteen.github.io/unforgettable-forteen/" target="_blank" rel="noopener noreferrer" className="product-item">
+                <div className="icon">🎬</div>
+                <div className="name">Forteen Studios</div>
+                <div className="desc">Interactive executive presence training</div>
+              </a>
+              <a href="https://mindlabs.forteen.in" target="_blank" rel="noopener noreferrer" className="product-item">
+                <div className="icon">🧠</div>
+                <div className="name">Mind Labs</div>
+                <div className="desc">Behavioral psychology insights</div>
+              </a>
+              <a href="https://giriforteen.github.io/listen-sprint" target="_blank" rel="noopener noreferrer" className="product-item">
+                <div className="icon">👂</div>
+                <div className="name">Listen Sprint</div>
+                <div className="desc">Active listening mastery</div>
+              </a>
+              <a href="mailto:girish@forteen.in?subject=Voice Sprint Waitlist" className="product-item">
+                <div className="icon">🎤</div>
+                <div className="name">Voice Sprint</div>
+                <div className="desc">Speak up with confidence</div>
+              </a>
+              <a href="https://giriforteen.github.io/presence-sprint-teasers/" target="_blank" rel="noopener noreferrer" className="product-item">
+                <div className="icon">⭐</div>
+                <div className="name">Presence Sprint</div>
+                <div className="desc">Command any room</div>
               </a>
             </div>
           </div>
+        </section>
 
-          {/* Right Panel - Mind Labs Episode 1 */}
-          <div className="panel-right">
-            <div className="panel-content">
-              <p className="episode-label-light">EPISODE 1</p>
-              <h2 className="panel-title-light">The Slot Machine Heart</h2>
-              <p className="panel-tagline">Why unpredictability feels like love</p>
-              <p className="panel-insight">
-                The current was always there. You just learned to call it home.
-              </p>
-              <a 
-                href="https://mindlabs.forteen.in/episodes/episode-1-full.html" 
-                className="btn btn-waitlist"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Start Episode 1 →
+        {/* Hero Section */}
+        <section className="hero">
+          <div className="hero-content">
+            <h1>Master workplace communication. One sprint at a time.</h1>
+            <p className="hero-subtitle">
+              60-second sprints that build real workplace skills for early-career professionals. 
+              Built for IT professionals, fintech analysts, tech teams, and emerging leaders.
+            </p>
+            <div className="hero-cta">
+              <a href="https://giriforteen.github.io/listen-sprint" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                Try Listen Sprint Free
               </a>
+              <Link href="/programs" className="btn btn-secondary">
+                Explore All Products
+              </Link>
             </div>
           </div>
         </section>
@@ -68,7 +81,7 @@ export default function Home() {
                 Practice real workplace scenarios. Get instant feedback. Build the skill that powers every professional relationship.
               </p>
               <a href="https://giriforteen.github.io/listen-sprint" className="btn btn-outline" target="_blank" rel="noopener noreferrer">
-                Launch Listen Sprint →
+                Launch Listen Sprint â†’
               </a>
             </div>
 
@@ -88,7 +101,7 @@ export default function Home() {
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                Take the Test →
+                Take the Test â†’
               </a>
             </div>
 
@@ -103,7 +116,7 @@ export default function Home() {
                 Find your voice in meetings. Contribute with confidence. Turn ideas into impact in any conversation.
               </p>
               <a href="mailto:girish@forteen.in?subject=Voice Sprint Waitlist" className="btn btn-outline">
-                Join Waitlist →
+                Join Waitlist â†’
               </a>
             </div>
           </div>
@@ -114,17 +127,17 @@ export default function Home() {
           <h2>How Forteen Sprints Work</h2>
           <div className="features-grid">
             <div className="feature-card">
-              <div className="feature-icon">⚡</div>
+              <div className="feature-icon">âš¡</div>
               <h3>Quick</h3>
               <p>60 seconds to 5 minutes. Practice fits into your actual workday, not around it.</p>
             </div>
             <div className="feature-card">
-              <div className="feature-icon">🎮</div>
+              <div className="feature-icon">ðŸŽ®</div>
               <h3>Gamified</h3>
               <p>Badges, streaks, and levels keep you motivated. Progress you can see and share.</p>
             </div>
             <div className="feature-card">
-              <div className="feature-icon">💼</div>
+              <div className="feature-icon">ðŸ’¼</div>
               <h3>Workplace-Ready</h3>
               <p>Real scenarios from IT, fintech, and tech. Skills you'll use the same day.</p>
             </div>
@@ -206,7 +219,7 @@ export default function Home() {
             <div className="founder-text">
               <h2>Built by Someone Who's Been There</h2>
               <p className="founder-intro">
-                Hi, I'm Girish. I've spent 35+ years in marketing and sales—writing speeches for IBM CEOs, 
+                Hi, I'm Girish. I've spent 35+ years in marketing and salesâ€”writing speeches for IBM CEOs, 
                 developing marketing strategy for Apple Computer, and leading marketing communications for IBM India.
               </p>
               <p>
@@ -254,10 +267,10 @@ export default function Home() {
               at scale. Custom programs for IT sales teams, professional development, and leadership acceleration.
             </p>
             <div className="corporate-services">
-              <div className="service-icon">🎯</div>
-              <div className="service-icon">💬</div>
-              <div className="service-icon">🚀</div>
-              <div className="service-icon">👥</div>
+              <div className="service-icon">ðŸŽ¯</div>
+              <div className="service-icon">ðŸ’¬</div>
+              <div className="service-icon">ðŸš€</div>
+              <div className="service-icon">ðŸ‘¥</div>
             </div>
             <Link href="/services" className="btn btn-secondary">
               Learn About Team Solutions

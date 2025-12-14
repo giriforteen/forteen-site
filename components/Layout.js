@@ -1,10 +1,13 @@
 import Head from "next/head"
 import Link from "next/link"
 import { useRouter } from "next/router"
+import { useState } from "react"
 
 export default function Layout({ title, description, children }){
   const { pathname } = useRouter()
   const isActive = (p) => pathname === p ? "active" : ""
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [activeDropdown, setActiveDropdown] = useState(null)
   
   return (
     <>
@@ -17,10 +20,6 @@ export default function Layout({ title, description, children }){
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content="/twitter-card.png" />
         <link rel="icon" href="/favicon.svg" />
-        <link 
-          href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;600;700;800;900&display=swap" 
-          rel="stylesheet" 
-        />
       </Head>
       
       <header className="header">
@@ -28,19 +27,137 @@ export default function Layout({ title, description, children }){
           <Link href="/" className="brand">
             <img 
               src="/Forteen_Logo.svg" 
-              alt="Forteen Consulting" 
+              alt="Forteen" 
               style={{ height: '48px', width: 'auto' }}
             />
           </Link>
-          <nav>
+          
+          {/* Desktop Navigation */}
+          <nav className="desktop-nav">
             <ul>
-              <li><Link className={isActive("/")} href="/">Home</Link></li>
-              <li><Link className={isActive("/about")} href="/about">About</Link></li>
-              <li><Link className={isActive("/services")} href="/services">Services</Link></li>
-              <li><Link className={isActive("/programs")} href="/programs">Programs</Link></li>
-              <li><Link className={isActive("/contact")} href="/contact">Contact</Link></li>
+              <li>
+                <a href="https://giriforteen.github.io/unforgettable-forteen/" target="_blank" rel="noopener noreferrer">
+                  Studios
+                </a>
+              </li>
+              <li>
+                <a href="https://mindlabs.forteen.in" target="_blank" rel="noopener noreferrer">
+                  Mind Labs
+                </a>
+              </li>
+              <li 
+                className="dropdown-parent"
+                onMouseEnter={() => setActiveDropdown('sprints')}
+                onMouseLeave={() => setActiveDropdown(null)}
+              >
+                <span className="dropdown-trigger">
+                  Sprints <span className="dropdown-arrow">▼</span>
+                </span>
+                <div className={`dropdown-menu ${activeDropdown === 'sprints' ? 'active' : ''}`}>
+                  <a href="https://giriforteen.github.io/listen-sprint" target="_blank" rel="noopener noreferrer" className="dropdown-item">
+                    <span className="dropdown-icon">👂</span>
+                    <div>
+                      <div className="dropdown-item-title">Listen Sprint</div>
+                      <div className="dropdown-item-desc">Active listening mastery</div>
+                    </div>
+                  </a>
+                  <a href="mailto:girish@forteen.in?subject=Voice Sprint Waitlist" className="dropdown-item">
+                    <span className="dropdown-icon">🎤</span>
+                    <div>
+                      <div className="dropdown-item-title">Voice Sprint</div>
+                      <div className="dropdown-item-desc">Speak up with confidence</div>
+                    </div>
+                  </a>
+                  <a href="https://giriforteen.github.io/presence-sprint-teasers/" target="_blank" rel="noopener noreferrer" className="dropdown-item">
+                    <span className="dropdown-icon">⭐</span>
+                    <div>
+                      <div className="dropdown-item-title">Presence Sprint</div>
+                      <div className="dropdown-item-desc">Command any room</div>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li 
+                className="dropdown-parent"
+                onMouseEnter={() => setActiveDropdown('company')}
+                onMouseLeave={() => setActiveDropdown(null)}
+              >
+                <span className="dropdown-trigger">
+                  Company <span className="dropdown-arrow">▼</span>
+                </span>
+                <div className={`dropdown-menu ${activeDropdown === 'company' ? 'active' : ''}`}>
+                  <Link href="/about" className="dropdown-item">
+                    <span className="dropdown-icon">ℹ️</span>
+                    <div>
+                      <div className="dropdown-item-title">About Forteen</div>
+                      <div className="dropdown-item-desc">Our mission & story</div>
+                    </div>
+                  </Link>
+                  <Link href="/services" className="dropdown-item">
+                    <span className="dropdown-icon">💼</span>
+                    <div>
+                      <div className="dropdown-item-title">Corporate Solutions</div>
+                      <div className="dropdown-item-desc">Training for teams</div>
+                    </div>
+                  </Link>
+                  <Link href="/contact" className="dropdown-item">
+                    <span className="dropdown-icon">📧</span>
+                    <div>
+                      <div className="dropdown-item-title">Contact</div>
+                      <div className="dropdown-item-desc">Get in touch</div>
+                    </div>
+                  </Link>
+                </div>
+              </li>
             </ul>
           </nav>
+
+          {/* Mobile Menu Toggle */}
+          <button 
+            className="mobile-menu-toggle"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            <span className={`hamburger ${mobileMenuOpen ? 'open' : ''}`}></span>
+          </button>
+        </div>
+
+        {/* Mobile Navigation */}
+        <div className={`mobile-nav ${mobileMenuOpen ? 'open' : ''}`}>
+          <div className="mobile-nav-section">
+            <a href="https://giriforteen.github.io/unforgettable-forteen/" target="_blank" rel="noopener noreferrer" className="mobile-nav-item">
+              <span className="mobile-icon">🎬</span> Studios
+            </a>
+            <a href="https://mindlabs.forteen.in" target="_blank" rel="noopener noreferrer" className="mobile-nav-item">
+              <span className="mobile-icon">🧠</span> Mind Labs
+            </a>
+          </div>
+          
+          <div className="mobile-nav-section">
+            <div className="mobile-section-title">Sprints</div>
+            <a href="https://giriforteen.github.io/listen-sprint" target="_blank" rel="noopener noreferrer" className="mobile-nav-item indent">
+              <span className="mobile-icon">👂</span> Listen Sprint
+            </a>
+            <a href="mailto:girish@forteen.in?subject=Voice Sprint Waitlist" className="mobile-nav-item indent">
+              <span className="mobile-icon">🎤</span> Voice Sprint
+            </a>
+            <a href="https://giriforteen.github.io/presence-sprint-teasers/" target="_blank" rel="noopener noreferrer" className="mobile-nav-item indent">
+              <span className="mobile-icon">⭐</span> Presence Sprint
+            </a>
+          </div>
+
+          <div className="mobile-nav-section">
+            <div className="mobile-section-title">Company</div>
+            <Link href="/about" className="mobile-nav-item indent" onClick={() => setMobileMenuOpen(false)}>
+              <span className="mobile-icon">ℹ️</span> About Forteen
+            </Link>
+            <Link href="/services" className="mobile-nav-item indent" onClick={() => setMobileMenuOpen(false)}>
+              <span className="mobile-icon">💼</span> Corporate Solutions
+            </Link>
+            <Link href="/contact" className="mobile-nav-item indent" onClick={() => setMobileMenuOpen(false)}>
+              <span className="mobile-icon">📧</span> Contact
+            </Link>
+          </div>
         </div>
       </header>
       
@@ -51,22 +168,30 @@ export default function Layout({ title, description, children }){
           <div className="grid cols-4">
             <div>
               <div className="badge">ABOUT</div>
-              <p>Forteen Consulting strengthens performance through Sales, Communication, Leadership, and Talent services.</p>
+              <p>Forteen strengthens performance through interactive learning experiences that build real communication skills.</p>
             </div>
             <div>
               <div className="badge">CONTACT</div>
               <p><a href="mailto:girish@forteen.in">girish@forteen.in</a><br/>Bengaluru, India</p>
             </div>
             <div>
-              <div className="badge">NAVIGATION</div>
-              <p><Link href="/">Home</Link> · <Link href="/about">About</Link> · <Link href="/services">Services</Link> · <Link href="/programs">Programs</Link> · <Link href="/contact">Contact</Link></p>
+              <div className="badge">PRODUCTS</div>
+              <p>
+                <a href="https://giriforteen.github.io/unforgettable-forteen/" target="_blank" rel="noopener noreferrer">Studios</a> · 
+                <a href="https://mindlabs.forteen.in" target="_blank" rel="noopener noreferrer">Mind Labs</a> · 
+                <a href="https://giriforteen.github.io/listen-sprint" target="_blank" rel="noopener noreferrer">Listen</a> · 
+                Voice · Presence
+              </p>
             </div>
             <div>
               <div className="badge">SOCIAL</div>
-              <p><a href="https://www.linkedin.com" target="_blank">LinkedIn</a> · <a href="https://instagram.com/forteen.consulting" target="_blank">Instagram</a></p>
+              <p>
+                <a href="https://www.linkedin.com/company/forteen-consulting" target="_blank" rel="noopener noreferrer">LinkedIn</a> · 
+                <a href="https://instagram.com/forteen.consulting" target="_blank" rel="noopener noreferrer">Instagram</a>
+              </p>
             </div>
           </div>
-          <div className="footer-meta">Â© {new Date().getFullYear()} Forteen Consulting Pvt. Ltd.</div>
+          <div className="footer-meta">© {new Date().getFullYear()} Forteen Consulting Pvt. Ltd.</div>
         </div>
       </footer>
     </>
