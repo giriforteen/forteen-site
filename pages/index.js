@@ -6,41 +6,44 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>Forteen - Master Workplace Communication Through Microlearning</title>
-        <meta name="description" content="60-second sprints that build real workplace skills for early-career professionals." />
+        <title>Forteen Studios - Where Professionals Become Unforgettable</title>
+        <meta name="description" content="Interactive learning experiences in executive presence and behavioral psychology." />
       </Head>
 
       <div className="home-container">
-        {/* Hero Section */}
-        <section className="hero">
-          <div className="hero-content">
-            <h1>Master workplace communication. One sprint at a time.</h1>
-            <p className="hero-subtitle">
-              60-second sprints that build real workplace skills for early-career professionals. 
-              Built for IT professionals, fintech analysts, tech teams, and emerging leaders.
-            </p>
-            <div className="hero-cta">
-              <a href="https://giriforteen.github.io/listen-sprint" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                Try Listen Sprint Free
+        {/* Two-Panel Hero Section */}
+        <section className="two-panel-hero">
+          {/* Left Panel - UNFORGETTABLE Episode 2 */}
+          <div className="panel-left">
+            <div className="panel-content">
+              <p className="episode-label">Episode 2: Before You Speak</p>
+              <h1 className="panel-title">Master first impressions and body language</h1>
+              <p className="panel-description">
+                20 interactive questions across 5 real-world scenarios. 10 minutes to transform your presence.
+              </p>
+              <a 
+                href="https://giriforteen.github.io/unforgettable-forteen/" 
+                className="btn btn-gradient"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                ▶ Stream Now
               </a>
-              <Link href="/programs" className="btn btn-secondary">
-                Explore All Products
-              </Link>
             </div>
           </div>
-        </section>
 
-        {/* Mind Labs CTA Section - NEW */}
-        <section className="mindlabs-cta-section">
-          <div className="container">
-            <div className="mindlabs-cta-card">
-              <h2>Ready to understand the patterns beneath behavior?</h2>
-              <p className="mindlabs-subtitle">
-                Explore the psychology of everyday decisions in our new series
+          {/* Right Panel - Mind Labs Episode 1 */}
+          <div className="panel-right">
+            <div className="panel-content">
+              <p className="episode-label-light">EPISODE 1</p>
+              <h2 className="panel-title-light">The Slot Machine Heart</h2>
+              <p className="panel-tagline">Why unpredictability feels like love</p>
+              <p className="panel-insight">
+                The current was always there. You just learned to call it home.
               </p>
               <a 
                 href="https://mindlabs.forteen.in/episodes/episode-1-full.html" 
-                className="btn btn-primary"
+                className="btn btn-waitlist"
                 target="_blank"
                 rel="noopener noreferrer"
               >
