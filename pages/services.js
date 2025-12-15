@@ -69,7 +69,7 @@ export default function Services() {
 
           {/* Leadership Development */}
           <div className="service-detail-card">
-            <div className="service-icon-large">👥</div>
+            <div className="service-icon-large">💥</div>
             <h2>Leadership Development</h2>
             <p className="service-description">
               Develop leaders at every level of your organization. Our programs build executive presence, strategic thinking, 
