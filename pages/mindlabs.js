@@ -6,7 +6,7 @@ export default function MindLabs() {
     <Layout>
       <Head>
         <title>Mind Labs - Understanding Human Behavior Through Story</title>
-        <meta name="description" content="Premium micro-learning series exploring behavioral psychology through storytelling, metaphor, and reverse psychology. The Radiolab of professional development." />
+        <meta name="description" content="Behavioral psychology through storytelling. One pattern per episode—no jargon, just insights that stick." />
       </Head>
 
       {/* Hero Section */}
@@ -15,8 +15,7 @@ export default function MindLabs() {
           <div className="mindlabs-hero-badge">🧠 FORTEEN MIND LABS</div>
           <h1>Understanding Behavior Through Story</h1>
           <p className="mindlabs-hero-subtitle">
-            Premium micro-learning that explores human behavioral patterns through indirect storytelling, 
-            metaphor, dark humor, and reverse psychology. The truths we discover ourselves stick harder.
+            Understand human behavior through story. One pattern per episode—no jargon, just insights that stick.
           </p>
           <div className="mindlabs-quote">
             <p>"The current was always there. You just learned to call it home."</p>
