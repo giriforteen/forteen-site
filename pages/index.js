@@ -77,7 +77,35 @@ export default function Home() {
           </div>
         </section>
 
-        {/* How It Works */}
+       {/* Pollinator Series Showcase */}
+        <section className="pollinator-showcase">
+          <div className="container">
+            <h2 className="section-title">The Pollinator Series</h2>
+            <p className="section-subtitle">Interactive episodes exploring attention and presence</p>
+            
+            <div className="pollinator-episodes">
+              <div className="episode-card">
+                <div className="episode-icon">🐝</div>
+                <h3>The Pollinator's Return</h3>
+                <p>A Nevada desert story about restoration, attention, and what happens when you remove the pollinators.</p>
+                <a href="https://pollinator.forteen.in" className="btn btn-outline" target="_blank" rel="noopener noreferrer">
+                  Experience Episode 1 →
+                </a>
+              </div>
+              
+              <div className="episode-card">
+                <div className="episode-icon">🌸</div>
+               <h3>The Cultivated Heart</h3>
+                <p>The cultivated heart knows when to speak and when silence serves better.</p>
+                <a href="https://pollinator.forteen.in/episode2.html" className="btn btn-outline" target="_blank" rel="noopener noreferrer">
+                  Experience Episode 2 →
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+   {/* How It Works */}
         <section className="how-it-works">
           <h2>How Forteen Sprints Work</h2>
           <div className="features-grid">
