@@ -47,3 +47,4 @@ The Contact page loads the EmailJS CDN and sends the form via `window.emailjs.se
 - Update footer links and social profiles as needed.
 - Replace OG/Twitter images with your brand visuals when ready.
  
+# Rollback to Dec 18
